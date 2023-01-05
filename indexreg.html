@@ -37,10 +37,19 @@ background-size: cover;
     }
 
     .bg-glass {
-      background-color: hsla(0, 0%, 100%, 0.9) !important;
-      backdrop-filter: saturate(200%) blur(25px);
+        background: rgba(255,255,255,0.15);
+-webkit-backdrop-filter: blur(37px);
+backdrop-filter: blur(37px);
+border: 1px solid rgba(255,255,255,0.075);
     }
 
+    .form-text{
+        color: black;
+    }
+
+    .form-label{
+        font-weight: bolder;
+    }
 
   </style>
 
@@ -100,11 +109,13 @@ background-size: cover;
   </div>
 
   <div class="mb-3">
-    <label for="inputPassword" class="col-sm-2 col-form-label">Confirm password</label>
-    <div class="col-sm-10">
-      <input type="password" class="form-control" id="inputPassword">
+    <label for="validationCustom02" class="form-label">Confirm password</label>
+    <input type="password" class="form-control" id="validationCustom01" required>
+    <div class="valid-feedback">
+      Looks good!
     </div>
   </div>
+
   
   <div class="col-12">
     <div class="form-check">
