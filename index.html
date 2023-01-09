@@ -10,13 +10,16 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
 
+          
   <style type="text/css">
+      @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
     body {
-      background: url(30001731_2206_w026_n002_2110b_p1_2110.jpg) no-repeat center center fixed;
+      background: url('30001731_2206_w026_n002_2110b_p1_2110.jpg') no-repeat center center fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
       background-size: cover;
+      font-family: 'Orbitron', sans-serif;
     }
 
     #radius-shape-1 {
@@ -44,15 +47,80 @@
     }
 
     .bg-glass {
-      background: rgba(255, 255, 255, 0.1);
-      -webkit-backdrop-filter: blur(100px);
-      backdrop-filter: blur(100px);
-      border: 1px solid rgba(255, 255, 255, 0.075);
+      background: rgba( 68, 63, 63, 0.3 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
     }
 
     .form-label {
       font-weight: bolder;
     }
+
+
+           
+
+            .card {
+              width: 500px;
+              height: 540px;
+              border: none;
+
+            }
+
+            .btr {
+              border-top-right-radius: 5px !important;
+            }
+
+            .btl {
+              border-top-left-radius: 5px !important;
+            }
+
+            .btn-dark {
+              color: #fff;
+              background-color: #0d6efd;
+              border-color: #0d6efd;
+            }
+
+            .btn-dark:hover {
+              color: #fff;
+              background-color: #0d6efd;
+              border-color: #0d6efd;
+            }
+
+            .nav-pills {
+              display: table !important;
+              width: 100%;
+            }
+
+            .nav-pills .nav-link {
+              border-radius: 0px;
+              border-bottom: 0px solid #0d6efd40;
+            }
+
+            .nav-item {
+              display: table-cell;
+              background: #0d6efd2e;
+            }
+
+            .form {
+              padding: 10px;
+              height: 300px;
+            }
+
+            .form input {
+              margin-bottom: 12px;
+              border-radius: 3px;
+            }
+
+            .form input:focus {
+              box-shadow: none;
+            }
+
+            .form button {
+              margin-top: 20px;
+            }
   </style>
 
 
@@ -90,32 +158,33 @@
     <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
       <div class="row gx-lg-5 align-items-center mb-5 justify-content-between">
         <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
-          <h1 class="my-4 display-5 fw-bold ls-tight" style="color: hsl(218, 81%, 95%)">
-            Anonymly</h1>
-          <h3>
-            <p id="typing" class="mb-4" style="color: hsl(218, 81%, 85%)">
+          <h2 class="my-4 display-5 fw-bold ls-tight" style="color: hsl(218, 81%, 95%)">
+              <p id="typing" class="mb-4" >
               
             </p>
-          </h3>
+          
+            
+          </h2>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/
+   jquery/3.5.1/jquery.min.js">
+</script>
         <script>
-          var i=0;
-          var txt='A place to chat, learn and meet new people keeping your identity hidden.';
-          var speed=40;
-
-          function typeWriter(){
-            if (i<txt.length) {
-              document.getElementById("typing").innerHTML+=txt.charAt(i);
-              i++;
-              setTimeout(typeWriter,speed);
-            }
-          }
+         
+           var typing = new Typed('#typing', {
+    strings: ["Be 'BEFIKRE'","campuSpace for people who loves privacy","Be hidden and express your thoughts","Express yourself without worrying about what others may think of you."],
+    typeSpeed: 50,
+    backSpeed: 0,
+    fadeOut: true,
+    loop: true
+  });
         </script>
 
         <div
           class="col-lg-6 mb-5 mb-lg-0 position-relative align-self-end d-flex justify-content-center align-items-center mt-5">
           <!-- bg-white for white background and bg-glass for the blurry glass texure -->
-          <div class="card bg-white">
+          <div class="card bg-glass">
 
             <form class="needs-validation" novalidate>
               <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
@@ -195,74 +264,7 @@
           <script type='text/javascript'
             src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js'>
             </script>
-          <style>
-
-           @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
-            body {
-              background-color: #000;
-              font-family: 'Orbitron', sans-serif;
-            }
-
-            .card {
-              width: 500px;
-              height: 540px;
-              border: none;
-
-            }
-
-            .btr {
-              border-top-right-radius: 5px !important;
-            }
-
-            .btl {
-              border-top-left-radius: 5px !important;
-            }
-
-            .btn-dark {
-              color: #fff;
-              background-color: #0d6efd;
-              border-color: #0d6efd;
-            }
-
-            .btn-dark:hover {
-              color: #fff;
-              background-color: #0d6efd;
-              border-color: #0d6efd;
-            }
-
-            .nav-pills {
-              display: table !important;
-              width: 100%;
-            }
-
-            .nav-pills .nav-link {
-              border-radius: 0px;
-              border-bottom: 0px solid #0d6efd40;
-            }
-
-            .nav-item {
-              display: table-cell;
-              background: #0d6efd2e;
-            }
-
-            .form {
-              padding: 10px;
-              height: 300px;
-            }
-
-            .form input {
-              margin-bottom: 12px;
-              border-radius: 3px;
-            }
-
-            .form input:focus {
-              box-shadow: none;
-            }
-
-            .form button {
-              margin-top: 20px;
-            }
-          </style>
+          
 
 
         </div>
